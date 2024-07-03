@@ -43,7 +43,7 @@ class NameInputScreen extends StatelessWidget {
                 SizedBox(height: 10),
                 Text(
                   'Enter details to see right price from verified buyers!',
-                  style: TextStyles.ProductSansRegular,
+                  style: TextStyles.ProductSansRegular1,
                 ),
                 SizedBox(height: 80),
                 Align(

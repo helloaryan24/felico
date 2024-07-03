@@ -6,6 +6,9 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import '../Welcome Screen/Add_Bank_Account_Details_Page.dart';
 import '../Welcome Screen/Gst_Page.dart';
 import '../Welcome Screen/Pickup_Address_Page.dart';
+import '../Welcome Screen/Puchase_Agreement_Page.dart';
+import '../Welcome Screen/Select_Category.dart';
+import '../Welcome Screen/Select_Material_Page.dart';
 import '../Welcome Screen/Splash_Screen.dart';
 import '../Welcome Screen/Welcome_Entername_Page.dart';
 
@@ -16,13 +19,10 @@ class AppRoutes {
   static const String Gst_Screen = '/Gst_Screen';
   static const String Pickup_Address_Page = '/PickupAddress_Page';
   static const String AddBank_AccountDetails_Page = '/AddBankAccountDetails_Page';
-  // static const String BottomBarPage = '/BottomBar_Page';
-  // static const String ForgetpasswordPage = '/Forgetpassword_Page';
-  // static const String OTPVerificationPage = '/OTPVerification_Page';
-  // static const String ProductsPage = '/Products_Page';
-  // static const String productsdetails = '/products_details';
-  // static const String Checkoutpage = '/Check_out_page';
-  // static const String filtere = '/Filter_Page';
+  static const String PuchaseAgreementPage = '/PuchaseAgreement_Page';
+  static const String SelectMaterialPage = '/SelectMaterial_Page';
+  static const String SelectCategory = '/Select_Category';
+
 
   static final routes = [
 
@@ -56,56 +56,29 @@ class AppRoutes {
       transitionDuration: Duration(milliseconds: 250),
       transition: Transition.leftToRightWithFade,
     ),
-
     GetPage(
       name: Onboarding_Page,
       page: () => OnboardingPage(),
       transitionDuration: Duration(milliseconds: 250),
       transition: Transition.leftToRightWithFade,
     ),
-    // GetPage(
-    //   name: BottomBarPage,
-    //   page: () => BottomBar_Page(),
-    //   transitionDuration: Duration(milliseconds: 250),
-    //   transition: Transition.leftToRightWithFade,
-    // ),
-    // GetPage(
-    //   name: ForgetpasswordPage,
-    //   page: () => Forgetpassword_Page(),
-    //   transitionDuration: Duration(milliseconds: 250),
-    //   transition: Transition.leftToRightWithFade,
-    // ),
-    // GetPage(
-    //   name: OTPVerificationPage,
-    //   page: () => OTPVerification_Page(),
-    //   transitionDuration: Duration(milliseconds: 250),
-    //   transition: Transition.leftToRightWithFade,
-    // ),
-    // GetPage(
-    //   name: ProductsPage,
-    //   page: () => Products_Page(),
-    //   transitionDuration: Duration(milliseconds: 250),
-    //   transition: Transition.leftToRightWithFade,
-    // ),
-    // GetPage(
-    //   name: productsdetails,
-    //   page: () => products_details(),
-    //   transitionDuration: Duration(milliseconds: 250),
-    //   transition: Transition.leftToRightWithFade,
-    // ),
-    // GetPage(
-    //   name: filtere,
-    //   page: () => Filter_Page(),
-    //   transitionDuration: Duration(milliseconds: 250),
-    //   transition: Transition.leftToRightWithFade,
-    // ),
-    // GetPage(
-    //   name: Checkoutpage,
-    //   page: () => Check_out_page(),
-    //   transitionDuration: Duration(milliseconds: 250),
-    //   transition: Transition.leftToRightWithFade,
-    // ),
-
-
+    GetPage(
+      name: PuchaseAgreementPage,
+      page: () => PuchaseAgreement_Page(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade,
+    ),
+    GetPage(
+      name: SelectMaterialPage,
+      page: () => SelectMaterial_Page(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade,
+    ),
+    GetPage(
+      name: SelectCategory,
+      page: () => Select_Category(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade,
+    ),
   ];
 }

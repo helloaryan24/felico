@@ -1,5 +1,6 @@
 import 'package:felico/All_Custom_Faction/Colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../All_Custom_Faction/All_Widget.dart';
@@ -15,9 +16,18 @@ class AddBankAccountDetails_Page extends StatelessWidget {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: Padding(
           padding: const EdgeInsets.all(10.0),
-          child: Text(
-            'Do it Later',
-            style: TextStyle(fontSize: 15,color: Colors.amber,fontFamily: 'ProductSansBold',fontWeight: FontWeight.w700),
+          child: GestureDetector(
+            onTap: (){
+              Get.toNamed('/PuchaseAgreement_Page');
+            },
+            child: Text(
+              'Do it Later',
+              style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.amber,
+                  fontFamily: 'ProductSansBold',
+                  fontWeight: FontWeight.w700),
+            ),
           ),
         ),
         backgroundColor: Colors.white,

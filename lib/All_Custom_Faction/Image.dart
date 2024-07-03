@@ -5,6 +5,7 @@ class Images {
   static const String onboringimg1 = 'assets/Images/37999801.png';
   static const String onboringimg2 = 'assets/Images/209460041.png';
   static const String onboringimg3 = 'assets/Images/561572828955211.png';
+  static const String plastic = 'assets/Images/plastic.png';
  }
 
 final List<String> imageAssetPaths = [
